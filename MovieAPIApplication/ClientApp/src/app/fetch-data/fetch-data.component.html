@@ -1,0 +1,60 @@
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!movies"><em>Loading...</em></p>
+
+<table class='table table-bordered' *ngIf="movies">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Rated</th>
+      <th>Released</th>
+      <th>Runtime</th>
+      <th>Genre</th>
+      <th>Director</th>
+      <th>Writer</th>
+      <th>Actors</th>
+      <th>Plot</th>
+      <th>Language</th>
+      <th>Country</th>
+      <th>Awards</th>
+      <th>Metascore</th>
+      <th>ImdbVotes</th>
+      <th>ImdbID</th>
+      <th>DVD</th>
+      <th>Box Office</th>
+      <th>Production</th>
+      <th>Website</th>
+      <th>Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let movie of movies">
+      <td>{{movie.title}}</td>
+      <td>{{movie.year}}</td>
+      <td>{{movie.rated}}</td>
+      <td>{{movie.released}}</td>
+      <td>{{movie.runtime}}</td>
+      <td>{{movie.genre}}</td>
+      <td>{{movie.director}}</td>
+      <td>{{movie.writer}}</td>
+      <td>{{movie.actors}}</td>
+      <td>{{movie.plot}}</td>
+      <td>{{movie.language}}</td>
+      <td>{{movie.country}}</td>
+      <td>{{movie.awards}}</td>
+      <td>{{movie.metascore}}</td>
+      <td>{{movie.imdbVotes}}</td>
+      <td>{{movie.writer}}</td>
+      <td>{{movie.ImdbID}}</td>
+      <td>{{movie.dvd}}</td>
+      <td>{{movie.boxOffice}}</td>
+      <td>{{movie.production}}</td>
+      <td>{{movie.website}}</td>
+      <td>{{movie.response}}</td>
+
+    </tr>
+  </tbody>
+</table>
