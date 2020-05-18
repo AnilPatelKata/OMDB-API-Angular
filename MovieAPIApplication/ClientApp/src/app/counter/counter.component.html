@@ -5,7 +5,8 @@
     <fieldset>
       <input id="s" [(ngModel)]="searchKey" (keyup.enter)="DoSearch()" placeholder="Type here..." [ngModelOptions]="{standalone: true}" />
 
-      <input type="button" id="submitButton" (click)="DoSearch()" [disabled]="searchKey==''" />
+      <input type="button" id="submitButton" (click)="DoSearch()" placeholder="Submit" [disabled]="searchKey==''" />
+    
       <div id="searchInContainer">
 
         <input type="radio" name="check" value="t" (change)="changeSearchType('t')" checked />
